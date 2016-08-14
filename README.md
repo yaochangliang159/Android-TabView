@@ -41,5 +41,38 @@
 ```Java
  tabView.setTabViewChild(tabViewChildList,getSupportFragmentManager());
 ```
-一共需要三步，就OK了，具体用法在DEMO里面有更多的演示。
+一共需要三步，就OK了，以一种最简单的方式就运行出来效果了，当然，还能自定义很多属性<br>
 
+###在JAVA代码里自定义
+```Java
+        tabView.setTextViewSelectedColor(Color.BLUE);
+        tabView.setTextViewUnSelectedColor(Color.BLACK);
+        tabView.setTabViewBackgroundColor(Color.YELLOW);
+        tabView.setTabViewHeight(dip2px(52));
+        tabView.setImageViewTextViewMargin(2);
+        tabView.setTextViewSize(14);
+        tabView.setImageViewWidth(dip2px(30));
+        tabView.setImageViewHeight(dip2px(30));
+        tabView.setTabViewGravity(Gravity.TOP);
+        tabView.setTabViewDefaultPosition(2);
+```
+###在xml中自定义:
+```Java
+ <com.ycl.tabview.library.TabView
+        android:id="@+id/tabView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:tab_textViewSelColor="#ff0000"
+        app:tab_textViewUnSelColor="#00ff00"
+        app:tab_tabViewBackgroundColor="#0000ff"
+        app:imageViewTextViewMargin="2dip"
+        app:tab_imageViewHeight="30dip"
+        app:tab_imageViewWidth="30dip"
+        app:tab_tabViewDefaultPosition="1"
+        app:tab_tabViewGravity="right"
+        app:tab_tabViewHeight="52dip"
+        app:tab_textViewSize="14sp"
+        >
+    </com.ycl.tabview.library.TabView>
+```
+详细的使用方法在DEMO里面都演示啦,如果你觉得这个库还不错,请赏我一颗star吧~~~
