@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TabView">
+        <attr name="tab_textViewSelColor"
+            format="reference|color"/>
+        <attr name="tab_textViewUnSelColor"
+            format="reference|color"/>
+        <attr name="tab_tabViewBackgroundColor"
+            format="reference|color"/>
+        <attr name="tab_tabViewHeight"
+            format="dimension"/>
+        <attr name="imageViewTextViewMargin"
+            format="dimension"/>
+        <attr name="tab_textViewSize"
+            format="dimension"/>
+        <attr name="tab_imageViewWidth"
+            format="dimension"/>
+        <attr name="tab_imageViewHeight"
+            format="dimension"/>
+        <attr name="tab_tabViewGravity">
+        <flag name="top" value="0x30" />
+        <flag name="bottom" value="0x50" />
+        <flag name="left" value="0x03" />
+        <flag name="right" value="0x05" />
+        </attr>
+        <attr name="tab_tabViewDefaultPosition"
+            format="integer"/>
+    </declare-styleable>
+</resources>
