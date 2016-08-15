@@ -6,6 +6,11 @@
 ![image](https://github.com/yaochangliang159/Android-TabView/raw/master/screenshot/image_right.jpg)
 ![image](https://github.com/yaochangliang159/Android-TabView/raw/master/screenshot/image_bottom.jpg)
 ##How To Use?
+在Android Studio项目的build.gradle里,加入以下代码:
+```Java
+    compile 'com.ycl.tabview.library:tabviewlibrary:1.0'
+```
+Sync项目以后，引入这个库就成功了~~~
 ###Step 1:
 ####在xml中,加入以下代码:
 ```Java
